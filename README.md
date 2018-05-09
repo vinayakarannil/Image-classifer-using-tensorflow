@@ -20,7 +20,8 @@ sudo pip install --upgrade pip tensorflow matplotlib
 You can either run the Dockerfile which will install all the dependencies and download the dataset. If you are doing everything manually. Please follow the below steps.
 ```
 
-1. Download the dataset, extract and kepp the two folders of images inside dataset_casestudy/data folder. The folder structure should be as below.
+1. Download the dataset, extract and keep the dataset of images inside /dataset_casestudy folder. Rename the extracted folder to "data" The folder structure should be as below.
+
   ---dataset_casestudy
      ----data
           ------sushi
@@ -28,7 +29,7 @@ You can either run the Dockerfile which will install all the dependencies and do
           
    url of dataset : http://research.us-east-1.s3.amazonaws.com/public/sushi_or_sandwich_photos.zip
    
-2. Download pre-trained Resnet-V1 model from the below url, extract and keep the model in /ckpt directory
+2. Download pre-trained Resnet-V1 model from the below url, extract and keep the model in /ckpt directory(create ckpt directory if not available)
 
     http://download.tensorflow.org/models/resnet_v1_152_2016_08_28.tar.gz
 3. Run the download_and_convert_data.py script which will convert the datset into tfrecord format. After running the script, you will see tfrecord file created inside dataset_casestudy directory and a file label.txt containing label mappings.
