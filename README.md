@@ -1,4 +1,4 @@
-# Sushi_Sandwich_Classifier
+# tf_Image_Classifier
 
 This project is an image classifier. Given a photo, the model will classify it into one of two categories: sushi or sandwich. .
 
